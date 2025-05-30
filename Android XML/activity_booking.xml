@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/carInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_car_name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/startDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ημερομηνία Έναρξης"
+        android:inputType="date"
+        android:importantForAutofill="yes"
+        android:textColorHint="#555555"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/endDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ημερομηνία Λήξης"
+        android:inputType="date"
+        android:importantForAutofill="yes"
+        android:textColorHint="#555555"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_booking" />
+</LinearLayout>
