@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/brandInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Μάρκα (π.χ. Toyota)" />
+
+    <EditText
+        android:id="@+id/maxPriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Μέγιστη τιμή"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Αναζήτηση"
+        android:layout_marginTop="20dp" />
+
+    <!-- ✅ Εδώ εμφανίζεται η λίστα -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

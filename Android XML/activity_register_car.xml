@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/brandInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Μάρκα (π.χ. Toyota)" />
+
+    <EditText
+        android:id="@+id/modelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Μοντέλο (π.χ. Yaris)"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/plateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Πινακίδα"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Τιμή ανά ημέρα (€)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Καταχώρηση"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Άκυρο"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

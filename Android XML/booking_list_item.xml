@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Πληροφορίες αυτοκινήτου -->
+    <TextView
+        android:id="@+id/carInfoText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Ημερομηνίες κράτησης -->
+    <TextView
+        android:id="@+id/datesText"
+        android:layout_marginTop="4dp"
+        android:textColor="#444444"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Κατάσταση κράτησης -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_marginTop="6dp"
+        android:textColor="#006600"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Κουμπιά ενεργειών -->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ακύρωση" />
+
+        <Button
+            android:id="@+id/approveBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Έγκριση" />
+
+        <Button
+            android:id="@+id/rejectBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Απόρριψη" />
+
+        <Button
+            android:id="@+id/disputeBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Αναφορά" />
+    </LinearLayout>
+</LinearLayout>
